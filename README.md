@@ -8,14 +8,13 @@ Metis: Natural Language Processing <br/>
 How to navigate this repo:
 - proposal_yelp.pdf: my initial proposal for a classification project 
 - mvp_yelp.pdf: mvp presented two days before the final project submission
-- data folder: data I used for modeling, both in json and csv format
-- images: images I used in my presentation
-- final: all files used for the final submission
+- data folder: data I used for modeling, in csv format only
+- images folder: images I used in my presentation
+- final folder: all files used for the final submission
   1. 1_yelp_extract_reviews.ipynb : notebook corresponding to the first phase of data extraction through MongoDB and initial data cleaning
   2. 2_yelp_unsupervised_modeling.ipynb : notebook corresponding to the second phase of topic modeling
   3. 3_yelp_supervised_modeling.ipynb : notebook corresponding to the third phase of classification
-  4. pickle files for use across notebooks
-  5. yelp_cafe_review_optimizer.pdf : final presentation
+  4. yelp_cafe_review_optimizer.pdf : final presentation
 
 ---
 
