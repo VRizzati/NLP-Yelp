@@ -6,7 +6,7 @@ Metis: Natural Language Processing <br/>
 ---
 
 How to navigate this repo:
-- proposal_yelp.pdf: my initial proposal for a classification project 
+- proposal_yelp.pdf: my initial proposal for a NLP project 
 - mvp_yelp.pdf: mvp presented two days before the final project submission
 - data folder: data I used for modeling, in csv format only
 - images folder: images I used in my presentation
@@ -26,7 +26,6 @@ My impact hypothesis is that by providing café owners with visibility on the el
 After consolidating all data on Portland cafés and related reviews, I started by conducting toping modeling with a combination of TF-IDF vectorizer and NMF topic modeler. Once I extracted the 9 main topics characterizing the Yelp reviews on cafés, I passed them in a classification model scheme presenting topics as features and positive sentiment as target. Through cross-validation, I was able to select Random Forest as my model of choice with a F1 score of 0.93.
 
 ## DATA
-
 I have collected data on Yelp reviews and businesses from the [Yelp dataset](https://www.yelp.com/dataset). 
 Then, I have created a MongoDB database containing 5 collections presenting Yelp data about various businesses across the US. For the purpose of this project, I focused on the *business* and *review* collections. 
 
@@ -37,7 +36,6 @@ I filtered the resulting dataframes for Portland as the location of interest and
 For the purpose of this analysis a review is considered positive if its associated number of stars is greater than 3, and negative if lower than 3. The target of our classification model will be based on this definition of *positive sentiment*.
 
 ## DESIGN
-
 As reflected in the three jupyter notebooks included in the final folder of this repo, this project is designed around three main components:
 1. **Data Extraction, Cleaning & EDA** : prepare data for modeling
 2. **Unsupervised Learning Model** : define the 9 most important topics characterizing Yelp reviews on cafés
@@ -46,7 +44,6 @@ As reflected in the three jupyter notebooks included in the final folder of this
 As a last step, in light of the results from my analysis, I have generated a few business insights and ideas for product development and marketing campaigns for the Yelp team. These are summarized in the final presentation. 
 
 ## ALGORITHM
-
 As a first step, I have extracted, cleaned and explored the data using MongoDB, pandas, numpy, seaborn and matplotlib.
 
 Next, in the **unsupervised learning** phase, I fist used TF-IDF and NMF to built a topic modeling baseline, which generated fairly well-defined and separable topics. After tuning the TF-IDF and NMF hyperparameters, I ended up with my optimal model that delivered 9 main topics about Yelp reviews on Portland cafés. 
@@ -56,7 +53,6 @@ Finally, as part of the **supervised learning** phase, I defined the 9 review to
 I finally selected Random Forest as my model of choice given its superior F1 score of 0.93. The related feature importance plot was very useful in interpreting the topics that are most important in generating a positive sentiment review. 
 
 ## TOOLS
-
 - MongoDB to store Yelp data contained in five json files
 - Pandas and numpy for data manipulation
 - spaCy and NLTK for NLP preprocessing
@@ -65,7 +61,6 @@ I finally selected Random Forest as my model of choice given its superior F1 sco
 - Scikit-learn for classification data modeling
 
 ## COMMUNICATION
-
 A slide deck is included in this repo. 
 
 In addition, see below a few visualizations related to both topic modeling and classification phases of this project.
