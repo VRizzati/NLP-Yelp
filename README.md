@@ -1,7 +1,5 @@
 # YELP REVIEWS TO UNLOCK BUSINESS GROWTH OPPORTUNITIES
-Valentina Rizzati <br/>
-June 24, 2021 <br/>
-Metis: Natural Language Processing <br/>
+
 
 ---
 
